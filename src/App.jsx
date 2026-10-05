@@ -234,13 +234,13 @@ function App() {
                 Have a question about our latest drops? Reach out and we'll get back to you shortly.
               </p>
 
-              <form className="flex flex-col gap-6 text-left max-w-2xl mx-auto">
+              <form action="YOUR_FORMSPREE_URL_HERE" method="POST" className="flex flex-col gap-6 text-left max-w-2xl mx-auto">
                 <div className="flex flex-col md:flex-row gap-6">
-                  <input type="text" placeholder="Your Name" className="w-full bg-gray-100 border border-gray-200 rounded-lg px-6 py-4 focus:outline-none focus:ring-2 focus:ring-black transition" />
-                  <input type="email" placeholder="Your Email" className="w-full bg-gray-100 border border-gray-200 rounded-lg px-6 py-4 focus:outline-none focus:ring-2 focus:ring-black transition" />
+                  <input type="text" name="name" required placeholder="Your Name" className="w-full bg-gray-100 border border-gray-200 rounded-lg px-6 py-4 focus:outline-none focus:ring-2 focus:ring-black transition" />
+                  <input type="email" name="email" required placeholder="Your Email" className="w-full bg-gray-100 border border-gray-200 rounded-lg px-6 py-4 focus:outline-none focus:ring-2 focus:ring-black transition" />
                 </div>
-                <textarea placeholder="Your Message" rows="5" className="w-full bg-gray-100 border border-gray-200 rounded-lg px-6 py-4 focus:outline-none focus:ring-2 focus:ring-black transition"></textarea>
-                <button type="button" className="w-full bg-black text-white font-bold py-4 px-10 rounded-full hover:bg-gray-800 transition cursor-pointer">
+                <textarea name="message" required placeholder="Your Message" rows="5" className="w-full bg-gray-100 border border-gray-200 rounded-lg px-6 py-4 focus:outline-none focus:ring-2 focus:ring-black transition"></textarea>
+                <button type="submit" className="w-full bg-black text-white font-bold py-4 px-10 rounded-full hover:bg-gray-800 transition cursor-pointer">
                   Send Message
                 </button>
               </form>
