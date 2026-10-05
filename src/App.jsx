@@ -147,7 +147,7 @@ function App() {
                        <img src="/new-arrival.png" alt="New Arrival Offer" className="w-full h-auto group-hover:scale-105 transition duration-700 ease-in-out"/>
                     </div>
                     <h3 className="text-2xl font-bold">New Arrival</h3>
-                    <p className="text-gray-600 mt-2"><strong className="text-gray-900">Offer 55%</strong> so shop now</p>
+                    <p className="text-gray-900 mt-2"><strong>✨ Exclusive Offer: Get 55% off your new favorite styles. Shop the collection now!</strong></p>
                   </motion.div>
 
                   <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.2 }} className="group cursor-pointer md:mt-24">
@@ -155,7 +155,7 @@ function App() {
                       <video src="/fashion-sale.mp4" autoPlay loop muted playsInline className="w-full h-auto group-hover:scale-105 transition duration-700 ease-in-out"/>
                     </div>
                     <h3 className="text-2xl font-bold">Fashion Sale</h3>
-                    <p className="text-gray-600 mt-2"><strong className="text-gray-900">Classic Suit</strong> 20% Off</p>
+                    <p className="text-gray-900 mt-2"><strong>👔 Sharp & Sophisticated: Take 20% off all premium classic suits today.</strong></p>
                   </motion.div>
                 </div>
               </div>
