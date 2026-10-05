@@ -1,15 +1,56 @@
-<!-- Google Translate Scripts -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/agency.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>agency</title>
+    <style>
+      /* Hides the white Google Translate banner at the top */
+      .skiptranslate iframe { 
+        display: none !important; 
+      }
+      body { 
+        top: 0px !important; 
+      }
+
+      /* Styles the dropdown menu to match your dark theme */
+      .goog-te-combo {
+        background-color: #222;
+        color: #ffffff;
+        padding: 10px 15px;
+        border: 1px solid #444;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        outline: none;
+      }
+
+      /* Hides the "Powered by Google" text to make it look built-in */
+      .goog-logo-link { 
+        display: none !important; 
+      }
+      .goog-te-gadget { 
+        color: transparent !important; 
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Your main React application -->
+    <div id="root"></div>
+    
+    <!-- Language dropdown positioned at the bottom -->
+    <div id="google_translate_element" style="text-align: center; padding: 40px; display: flex; justify-content: center; background: #000;"></div>
+    
+    <!-- Google Translate Scripts -->
     <script type="text/javascript">
       function googleTranslateElementInit() {
         new google.translate.TranslateElement({
           pageLanguage: 'en',
-          // This line restricts the dropdown to Hindi, Bengali, English, and Portuguese
           includedLanguages: 'hi,bn,en,pt' 
         }, 'google_translate_element');
       }
     </script>
-    
-    <!-- The &hl=en at the very end of this link forces the menu text to stay in English -->
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=en"></script>
     
     <!-- Vite Entry Point -->
